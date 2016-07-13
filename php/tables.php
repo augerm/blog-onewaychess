@@ -7,6 +7,7 @@ $password = $url["pass"];
 $db = substr($url["path"], 1);
 
 $con = new mysqli($server, $username, $password, $db);
+echo $con;
 
 $table2 = "entries"; // id, mydate, title, entryText, topic, pEmail
 $table = "posters"; // email, fname, lname, imagelink, bioText, password, position
