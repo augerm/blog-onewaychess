@@ -1,9 +1,12 @@
 <?php
+$url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
 
-$con = new mysqli('localhost', 'chess_testuser', 'chess123', 'chess_blogEntries'); 
-		if ($con->connect_error) {
-    		die("Connection failed: " . $con->connect_error);
-		}
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$con = new mysqli($server, $username, $password, $db);
 
 $table2 = "entries"; // id, mydate, title, entryText, topic, pEmail
 $table = "posters"; // email, fname, lname, imagelink, bioText, password, position
