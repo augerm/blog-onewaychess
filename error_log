@@ -1,0 +1,38 @@
+[12-Jan-2016 21:50:40 America/Chicago] PHP Warning:  require(path-to-Stripe.php): failed to open stream: No such file or directory in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:50:40 America/Chicago] PHP Warning:  require(path-to-Stripe.php): failed to open stream: No such file or directory in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:50:40 America/Chicago] PHP Fatal error:  require(): Failed opening required 'path-to-Stripe.php' (include_path='.:/opt/php54/lib/php') in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:51:01 America/Chicago] PHP Warning:  require(path-to-Stripe.php): failed to open stream: No such file or directory in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:51:01 America/Chicago] PHP Warning:  require(path-to-Stripe.php): failed to open stream: No such file or directory in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:51:01 America/Chicago] PHP Fatal error:  require(): Failed opening required 'path-to-Stripe.php' (include_path='.:/opt/php54/lib/php') in /home2/chess/public_html/onewaychess.com/schools/payment.php on line 2
+[12-Jan-2016 21:52:32 America/Chicago] PHP Fatal error:  Class 'Stripe\Stripe' not found in /home2/chess/public_html/onewaychess.com/schools/php/charge.php on line 4
+[12-Jan-2016 21:54:52 America/Chicago] PHP Fatal error:  Class 'Stripe\Stripe' not found in /home2/chess/public_html/onewaychess.com/schools/php/charge.php on line 4
+[06-Apr-2016 22:46:55 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:49:04 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:49:50 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:49:54 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:50:34 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:50:42 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:52:27 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:52:52 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:54:10 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[06-Apr-2016 22:55:20 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/submitPost.php on line 4
+[17-Apr-2016 14:35:22 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 112
+[17-Apr-2016 15:00:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 112
+[17-Apr-2016 16:25:20 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 112
+[21-Apr-2016 02:29:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 121
+[24-Apr-2016 15:09:16 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'cs377spring16.mathcs.emory.edu' (110) in /home2/chess/public_html/onewaychess.com/schools_old/project4.php on line 59
+[24-Apr-2016 15:10:07 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'cs377spring16.mathcs.emory.edu' (110) in /home2/chess/public_html/onewaychess.com/schools_old/project4.php on line 59
+[24-Apr-2016 15:13:12 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'cs377spring16.mathcs.emory.edu' (110) in /home2/chess/public_html/onewaychess.com/schools_old/project4.php on line 59
+[06-May-2016 19:09:04 America/Chicago] PHP Parse error:  syntax error, unexpected ''</div>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 209
+[08-May-2016 09:03:48 America/Chicago] PHP Fatal error:  Call to undefined function getElementById() in /home2/chess/public_html/onewaychess.com/schools_old/entriesfiltered.php on line 16
+[14-May-2016 16:27:24 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 132
+[14-May-2016 16:27:36 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 132
+[14-May-2016 16:27:37 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 132
+[14-May-2016 21:16:04 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 147
+[14-May-2016 21:17:58 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 147
+[14-May-2016 21:18:33 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 153
+[14-May-2016 21:18:53 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 155
+[14-May-2016 21:18:56 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 155
+[15-May-2016 18:28:08 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home2/chess/public_html/onewaychess.com/schools_old/entries.php on line 141
+[30-May-2016 20:55:34 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/chess/public_html/onewaychess.com/schools_old/blog.php on line 231
+[30-May-2016 20:55:54 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/chess/public_html/onewaychess.com/schools_old/blog.php on line 138
