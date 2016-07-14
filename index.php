@@ -25,14 +25,14 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-	  
-		<!-- Favicon --> 
-		<link rel="shortcut icon" href="favicon.ico" /> 
+      
+        <!-- Favicon --> 
+        <link rel="shortcut icon" href="favicon.ico" /> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="js/lockfixed.js"></script>
         <script src="js/lockfixed.min.js"></script>
         <script src="js/stickyMojo.js"></script>
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -97,7 +97,7 @@
         </div>
     </header>
 <!--     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Recent Articles</a>    
- -->		<!-- About Section -->
+ -->        <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -108,7 +108,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-						<h3 style="text-align:center"> <a href="entries.php?id=17"> 
+                        <h3 style="text-align:center"> <a href="entries.php?id=17"> 
                         <?php 
                             $url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
 
@@ -122,23 +122,23 @@
                             while($row = mysqli_fetch_array($result)) {
                                 echo $row["title"] . '
                                     </a> </h3>
-    								<h4 style="text-align:center; color:#41B7D8"> <small> By: </small> <a href="entries.php?fname=' . $row["fname"] . '&lname=' . 
+                                    <h4 style="text-align:center; color:#41B7D8"> <small> By: </small> <a href="entries.php?fname=' . $row["fname"] . '&lname=' . 
                                     $row["lname"] . '" style="color:#41B7D8;">' . $row["fname"] . ' ' . $row["lname"] . '</a><i class="fa fa-clock-o" style="color:#E53B2C; margin-left:2%"></i> <span style="color:black"><small>'
                                     . $row["mydate"] . '</small> </span> </h4>
-    								<hr>';
+                                    <hr>';
                                 echo '<p><div style="text-align:center;font-size:21px;font-family:Lato;">' . $row["entryText"] . '</div></p>';
                             }
                             mysqli_close($con);
                         ?>
                 </div>
-								<div class="col-md-4 col-md-offset-4" style="margin-top:2%">
-									<img  width="100%"  allign="middle" src="img/blog/OneWayChessBlogWelcome.png"> 
-								</div>
+                                <div class="col-md-4 col-md-offset-4" style="margin-top:2%">
+                                    <img  width="100%"  allign="middle" src="img/blog/OneWayChessBlogWelcome.png"> 
+                                </div>
             </div>
         </div>
     </section> 
 
-		
+        
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
@@ -151,7 +151,7 @@
                     <div class="footer-col col-md-4">
                         <h3>Our Other Projects</h3>
                         <ul class="list-inline">
-														<li>
+                                                        <li>
                                 <a href="http://www.onewaychess.com" class="btn-social btn-outline"><i class="fa fa-home"></i> </a>
                             </li>
                             <li>

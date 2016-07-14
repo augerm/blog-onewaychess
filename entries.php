@@ -111,10 +111,13 @@
         $f_name = $_GET["fname"];
         $l_name = $_GET["lname"];
         $id = $_GET["id"]; 
-        $con = new mysqli('localhost', 'chess_testuser', 'chess123', 'chess_blogEntries'); 
-        if ($con->connect_error) {
-            die("Connection failed: " . $con->connect_error);
-        }
+        $url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+
+        $con = new mysqli($server, $username, $password, $db);
         
         if (is_null($f_name) === false) {
             echo '
@@ -341,42 +344,6 @@ app.controller('commentCtrl', function($scope) {
         };
     });
 </script> 
-<section class="success" id="writers">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Writers</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <?php
-                $con = new mysqli('localhost', 'chess_testuser', 'chess123', 'chess_blogEntries'); 
-                if ($con->connect_error) {
-                    die("Connection failed: " . $con->connect_error);
-                }
-                $sql = "SELECT email, fname, lname, bioText, position, imagelink FROM posters";
-                $result = $con->query($sql);
-                while($row = mysqli_fetch_array($result)) {
-                    if (is_null($row["imagelink"])) {
-                        //echo '<img src="img\LeadInstructor.png" alt="user no picture" style="width:193px;height:192px;float:left;">';
-                        echo '<img src="img\Users\nophoto_user.png" class="img-circle" alt="user no picture" style="width:220px;height:220px;float:left;">';
-                    }
-                    else {
-                        echo '<img src="img\Users\\' . $row["imagelink"] . '"class="img-circle" alt=' . $row["email"] . ' picture" style = "width:270px;height:220px;float:left">';
-                    }
-                    echo '<div style="float:initial;"> <strong>    ' . $row["fname"] . ' ' . $row["lname"] . '</strong> :<i> ' . $row["email"] . '</i>' ;
-                    echo '<br>';
-                    //echo '<div style="display:inline; white-space:nowrap; font-size:18px">';
-                    echo '    <span style = "font-size: 20px !important;">' . $row["bioText"] . '</span></div>';
-                    echo "<br><br><br><br><br><br><br><br><br><br>";
-                } 
-                
-                mysqli_close($con);
-                ?>         
-            </div>
-        </div>
-    </section>
 -->
     <!-- Footer -->
     <footer class="text-center">
