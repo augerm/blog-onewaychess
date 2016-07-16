@@ -110,15 +110,18 @@
                 <div class="col-md-12">
 						<h3 style="text-align:center"> <a href="entries.php?id=17"> 
                         <?php 
-                            $url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
+                            /*$url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
 
                             $server = $url["host"];
                             $username = $url["user"];
                             $password = $url["pass"];
-                            $db = substr($url["path"], 1);
+                            $db = substr($url["path"], 1);*/
+                            $server = "us-cdbr-iron-east-04.cleardb.net";
                             echo $server;
+                            $username = "b0c4b9423d2803";
                             echo $username;
-                            echo $password;
+                            $password = "48a9e62a";
+                            $db = "heroku_1dd2b8ffb0f1998";
                             echo $db;
                             $con = new mysqli($server, $username, $password, $db);
                             if ($con->connect_error) {
