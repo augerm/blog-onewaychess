@@ -117,6 +117,9 @@
                             $password = $url["pass"];
                             $db = substr($url["path"], 1);
                             $con = new mysqli($server, $username, $password, $db);
+                            if ($con->connect_error) {
+                                die("Connection failed: " . $con->connect_error);
+                            }
                             $sql = "SELECT id, mydate, title, entryText, fname, lname FROM entries, posters WHERE posters.email = entries.pEmail ORDER BY id DESC LIMIT 1";
                             $result = $con->query($sql);
                             while($row = mysqli_fetch_array($result)) {
