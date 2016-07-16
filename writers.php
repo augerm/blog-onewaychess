@@ -113,13 +113,14 @@
             </div>
             <div class="row">
                 <?php
-                $url = parse_url(getenv("mysql://b0c4b9423d2803:48a9e62a@us-cdbr-iron-east-04.cleardb.net/heroku_1dd2b8ffb0f1998?reconnect=true"));
-
-                            $server = $url["host"];
-                            $username = $url["user"];
-                            $password = $url["pass"];
-                            $db = substr($url["path"], 1);
-                            $con = new mysqli($server, $username, $password, $db);
+                $server = "us-cdbr-iron-east-04.cleardb.net";
+                $username = "b0c4b9423d2803";
+                $password = "48a9e62a";
+                $db = "heroku_1dd2b8ffb0f1998";
+                $con = new mysqli($server, $username, $password, $db);
+                if ($con->connect_error) {
+                    die("Connection failed: " . $con->connect_error);
+                }
                 $sql = "SELECT email, fname, lname, bioText, position, imagelink FROM posters";
                 $result = $con->query($sql);
                 while($row = mysqli_fetch_array($result)) {
