@@ -47,10 +47,14 @@ if ($uploadOk == 0) {
     }
 }
 
-		$con = new mysqli('localhost', 'chess_testuser', 'chess123', 'chess_blogEntries'); 
-		if ($con->connect_error) {
-    		die("Connection failed: " . $con->connect_error);
-		}
+		$server = "us-cdbr-iron-east-04.cleardb.net";
+        $username = "b0c4b9423d2803";
+        $password = "48a9e62a";
+        $db = "heroku_1dd2b8ffb0f1998";
+        $con = new mysqli($server, $username, $password, $db);
+        if ($con->connect_error) {
+            die("Connection failed: " . $con->connect_error);
+        }
         $storeText = nl2br(htmlentities($bio, ENT_QUOTES, 'UTF-8'));
         $bio = $con->real_escape_string($storeText);
         $fname = "'" . $fname . "'";
