@@ -24,7 +24,6 @@ $date = date("n-j-Y g:i a");
 		$title = "'" . $title . "'";
 		$topic = "'" . $topic . "'";
 		$date = "'" . $date . "'";
-		$password = hash('ripemd160', $password);
 		//$sqlTest = "SELECT password from posters where $userName = (select email from posters)";
 		$sqlTest = "SELECT password from posters where $userName = posters.email";		
 		$result = $con->query($sqlTest);
