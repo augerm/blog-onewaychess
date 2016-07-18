@@ -69,7 +69,7 @@ if ($uploadOk == 0) {
 	if ($con->query($sql) === TRUE) {
     	echo "<br>New record created successfully";
     	echo "<br>";
-    	echo "Wait for redirect or click <a href='http://onewaychess.com/blog/blog.php'>here</a> to go back";
+    	echo "Wait for redirect or click <a href='http://blog.onewaychess.com/'>here</a> to go back";
     }
  	else {
     	echo "Error: " . $sql . "<br>" . $con->error;

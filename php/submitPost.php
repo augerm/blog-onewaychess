@@ -25,13 +25,16 @@ $date = date("n-j-Y g:i a");
 		$topic = "'" . $topic . "'";
 		$date = "'" . $date . "'";
 		$password = hash('ripemd160', $password);
+		echo "password hashed: ";
 		echo hash('ripemd160', 'password');
 		//$sqlTest = "SELECT password from posters where $userName = (select email from posters)";
 		$sqlTest = "SELECT password from posters where $userName = posters.email";		
 		$result = $con->query($sqlTest);
 		$row = $result->fetch_assoc();
 		if ($row["password"] != $password) {
+			echo "our password hashed: ";
 			echo $row["password"];
+			echo "given password hashed: ";
 			echo $password;
 			die("invalid login information");
 		}
@@ -43,7 +46,7 @@ $date = date("n-j-Y g:i a");
 	if ($con->query($sql) === TRUE) {
     	echo "New record created successfully";
     	echo "<br>";
-    	echo "<a href='http://onewaychess.com/blog/blog.html'>back</a>";
+    	echo "<a href='http://blog.onewaychess.com/entries.php'>back</a>";
     }
  	else {
     	echo "Error: " . $sql . "<br>" . $con->error;
@@ -51,3 +54,4 @@ $date = date("n-j-Y g:i a");
 
 	$con->close();
 ?> 
+2c08e8f5884750a7b99f6f2f342fc638db25ff312c08e8f5884750a7b99f6f2f342fc638db25ff315bead86e6b60f15d36e9ca2fb0bbd5f9b8dc0ab5invalid login information
