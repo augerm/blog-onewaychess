@@ -25,11 +25,14 @@ $date = date("n-j-Y g:i a");
 		$topic = "'" . $topic . "'";
 		$date = "'" . $date . "'";
 		$password = hash('ripemd160', $password);
+		echo hash('ripemd160', 'password');
 		//$sqlTest = "SELECT password from posters where $userName = (select email from posters)";
 		$sqlTest = "SELECT password from posters where $userName = posters.email";		
 		$result = $con->query($sqlTest);
 		$row = $result->fetch_assoc();
 		if ($row["password"] != $password) {
+			echo $row["password"];
+			echo $password;
 			die("invalid login information");
 		}
 		$sql = "INSERT INTO entries (mydate, title, entryText, topic, pEmail) VALUES ($date,$title,$entry,$topic,$userName)";
